@@ -7,5 +7,35 @@
 </head>
 <body>
     <h2>我是index页</h2>
+    <!--判断含有几个a-->
+    <!--<script>
+         var str="clssdsdddsd";
+         var find = "a";
+         var reg=new RegExp(find,"g");
+        var c= str.match(reg);
+        alert(c?c.length:0);
+    </script>-->
+    <!--<script>
+        function login(username,pwd){
+            if(username==="admin" && pwd==="123456"){
+                alert("登录成功！！！")
+            }
+        }
+    </script>-->
+    <!--<script>
+        //xxx-xxx-xxxx-0
+        /\d{3}-\d{3}-\d{4}-0/.test()    
+    </script>-->
+    <script>
+        function toCame(str){
+            var substr=str.split('-');
+            var str = substr[0];
+            for(i=1;i<substr.length;i++){
+                str+=substr[i].substr(0,1).toLocaleUpperCase()+substr[i].substr(1);
+            }
+            return str;
+        }
+        alert( toCame('border-color-left') );
+    </script>
 </body>
 </html>
